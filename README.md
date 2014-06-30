@@ -8,5 +8,7 @@ A Jetty 9 image based on Debian Wheezy and Oracle JDK8.
     
     docker build -t 'jetty9' .
 
+## Usage
 
+    docker run -v /path/to/webapps:/opt/jetty/webapps pandeiro/jetty9
 
