@@ -14,7 +14,7 @@ EXPOSE 8080
 
 ENV JETTY_HOME /opt/jetty
 
-VOLUME ["/opt/jetty/webapp"]
+VOLUME ["/opt/jetty/webapps"]
 
 ENTRYPOINT ["/app/start-jetty"]
 
