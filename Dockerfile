@@ -1,7 +1,7 @@
 FROM pandeiro/oracle-jdk8
 MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 
-RUN wget -O /tmp/jetty.tar.gz \
+RUN wget -qO /tmp/jetty.tar.gz \
     'http://eclipse.org/downloads/download.php?file=/jetty/stable-9/dist/jetty-distribution-9.2.5.v20141112.tar.gz&r=1' \
     && tar xzf /tmp/jetty.tar.gz -C /opt \
     && mv /opt/jetty* /opt/jetty \
